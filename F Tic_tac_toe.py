@@ -220,6 +220,8 @@ def game():
             if results.count(1) == int((n_match / 2 + 0.5)) or results.count(1) == int(
                     (n_match / 2 - 0.5)) and results.count(3) == 2:
                 break
+            if results.count(3) == n_match or results.count(1) + results.count(2) + results.count(3) == n_match:
+                break
 
             else:
                 print("\n NEXT ROUND \n")
@@ -230,6 +232,8 @@ def game():
 
             if results.count(1) == int((n_match / 2 + 0.5)) or results.count(1) == int(
                     (n_match / 2 - 0.5)) and results.count(3) == 2:
+                break
+            if results.count(3) == n_match or results.count(1) + results.count(2) + results.count(3)==n_match:
                 break
             else:
                 print("\n NEXT ROUND \n")
@@ -243,7 +247,7 @@ def game():
     elif results.count(2) > results.count(1):
         print("  **", p2, "WINS THE GAME ** \n  ** CONGRATULATIONS **")
 
-    elif results.count(3)==n_match or results.count(1)+results.count(2)+results.count(3)==n_match:
+    elif results.count(3) == n_match or results.count(1) + results.count(2) + results.count(3)==n_match:
         print("         **TIE** \n YOU TWO ARE SUPER GOOD!!")
 
 game()
