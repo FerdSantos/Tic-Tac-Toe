@@ -4,7 +4,7 @@
 import numpy as np
 
 #Hello World
-print("\n       **OLÁ LUCINHAA!!** \n **Vamos jogar o jogo da velha?**\n")
+print("\n       **OLÁ PESSOAL!!** \n **Vamos jogar o jogo da velha?**\n")
 print(" \nPara jogar, basta digitar 'a', 'b', 'c', etc... assim como o abaixo: \n \n  \
 (a b c) \n  (d e f) \n  (g h i) \n \n *BOA SORTE* \n")
 
